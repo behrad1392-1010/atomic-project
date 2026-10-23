@@ -27,6 +27,12 @@ body {
     }
 }
 
+input {
+    font-family: Vazir, sans-serif;
+    border: none;
+    outline: none;
+}
+
 button {
     font-family: Vazir, sans-serif;
 }
