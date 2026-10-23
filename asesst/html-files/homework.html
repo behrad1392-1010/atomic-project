@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atomic-school</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/call.css" />
+  </head>
+  <body>
+    <!------------------  Header  ------------------>
+    <header class="Header">
+      <h2 class="navbar-title">مدرسه انرژی اتمی ⚛️</h2>
+      <!-- navbar -->
+      <nav class="navbar">
+        <a href="../../index.html" class="navbar-item" data-title="کد ها"
+          ><img
+            src="../imges/code-solid-full.svg"
+            alt="code"
+            class="header-img"
+          />
+        </a>
+        <a href="./AbouteWe.html" data-title="درباره ما" class="navbar-item"
+          ><img
+            src="../imges/user-solid-full.svg"
+            alt="code"
+            class="header-img"
+        /></a>
+        <a href="./call.html" data-title="ارتباط با ما" class="navbar-item"
+          ><img
+            src="../imges/phone-solid-full.svg"
+            alt="code"
+            class="header-img"
+        /></a>
+        <a
+          href="./homework.htmlv"
+          data-title="ارسال تکالیف"
+          class="navbar-item header-active-img"
+          ><img
+            src="../imges/arrow-up-from-bracket-solid-full.svg"
+            alt="code"
+            class="header-img"
+        /></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="homeWork-title-box">
+        <h2 class="homeWork-title">ارسال تکالیف</h2>
+        <p class="homeWork-text">
+          شما می توانید در این قسمت لینک ویدیو آپارات هر قسمت را بارکزاری کنید !
+        </p>
+        <p class="homeWork-text" style="color: red;">
+          در حال حاضر این قسمت به صورت رسمی در دسترس نیست
+        </p>
+        <p class="homeWork-text" style="color: red; margin-top: -15px;">
+          تا وقتی که معلم اجازه بدهد
+        </p>
+      </div>
+      <section class="homeWork-box">
+        <form
+          action="#"
+          autocomplete="off"
+          method="post"
+        >
+          <div class="homeWork-boxes">
+            <label for="name" class="homeWork-label">اسم</label>
+            <input
+              type="text"
+              minlength="3"
+              maxlength="25"
+              name="name"
+              class="homework-input name"
+              id="name"
+              placeholder="محمد"
+              required
+              oninvalid="
+                this.setCustomValidity('لطفاً بین 3 تا 25 کاراکتر وارد کنید')
+              "
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="homeWork-boxes">
+            <label for="lastName" class="homeWork-label">فامیلی</label>
+            <input
+              type="text"
+              name="lastName"
+              minlength="3"
+              maxlength="25"
+              class="homework-input lastName"
+              id="lastName"
+              placeholder="محمدی"
+              oninvalid="
+                this.setCustomValidity('لطفاً بین 3 تا 25 کاراکتر وارد کنید')
+              "
+              oninput="this.setCustomValidity('')"
+              required
+            />
+          </div>
+
+          <div class="homeWork-boxes">
+            <label for="videoLink" class="homeWork-label"
+              >لینک ویدیو در آپارات</label
+            >
+            <input
+              type="url"
+              name="videoLink"
+              class="homework-input link"
+              id="videoLink"
+              placeholder="https://aparat.com/v/123456"
+              required
+              oninvalid="this.setCustomValidity('لطفا آدرس درست وارد کنید !')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <button type="submit" class="homeWork-submit-btn">ارسال</button>
+        </form>
+
+        <p id="success-msg" style="display: none; color: green">
+          فرم با موفقیت ارسال شد!
+        </p>
+      </section>
+    </main>
+
+    <script src="../../main.js"></script>
+  </body>
+</html>
